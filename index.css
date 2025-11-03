@@ -266,7 +266,7 @@ p {
     position: fixed;
     top: 0;
     left: -50%;        /* shift the container left */
-    width: 140%;       /* slightly wider to fill viewport */
+    width: 170%;       /* slightly wider to fill viewport */
     height: 100%;
     object-fit: cover;
     object-position: center center; /* keep video content centered inside container */
