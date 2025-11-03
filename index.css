@@ -272,7 +272,7 @@ p {
     width: auto;
     height: auto;
     object-fit: contain; /* fit entire video on screen */
-    object-position: center center;
+    object-position: 40% center;
     background-color: black; /* prevents white edges if aspect ratio differs */
     z-index: -1;
   }
