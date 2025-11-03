@@ -112,12 +112,12 @@ p {
   margin-right: 10px;
 }
 
-/* Logo */
+/* Logo: centered on all devices */
 .logo {
   position: fixed;       /* stays on top of video and overlay */
-  top: 80px;             /* move below nav (adjust to match nav height) */
-  left: 50%;             /* center horizontally */
-  transform: translateX(-50%); /* truly center it */
+  top: 80px;             /* below nav */
+  left: 50%;             /* horizontal center */
+  transform: translateX(-50%); /* exact centering */
   z-index: 16;
 }
 
@@ -127,22 +127,20 @@ p {
   image-rendering: -webkit-optimize-contrast;
 }
 
-/* Responsive: center below nav on smaller screens */
+/* Tablet screens */
 @media (max-width: 768px) {
   .logo {
-    top: 70px;           /* below nav */
-    left: 50%;
-    transform: translateX(-50%);
+    top: 70px;           /* adjust spacing below nav */
   }
 
   .logo img {
-    width: 150px;
+    width: 150px;        /* smaller logo */
   }
 }
 
-/* Very small screens */
+/* Mobile screens */
 @media (max-width: 480px) {
   .logo img {
-    width: 120px;
+    width: 120px;        /* even smaller logo */
   }
 }
