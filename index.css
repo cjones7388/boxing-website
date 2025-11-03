@@ -171,11 +171,27 @@ p {
 /* --- Mobile Layout Fixes --- */
 @media (max-width: 600px) {
 
-  /* Let the overlay scroll naturally */
-  .overlay {
-    align-items: center;
+    .overlay {
+    display: block; /* normal block flow instead of flex */
+    align-items: unset;
     text-align: center;
     padding: 120px 10px 60px;
+  }
+
+  .overlay h1,
+  .overlay p {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    margin: 10px auto;
+    max-width: 90%;
+  }
+
+  .gallery {
+    position: relative !important;
+    width: 90%;
+    margin: 20px auto;
+    height: auto;
   }
 
   /* Logo should just flow */
@@ -210,16 +226,6 @@ p {
   }
 
   /* Gallery moves below the text and becomes full width */
-  .gallery {
-    position: relative;
-    top: auto;
-    right: auto;
-    width: 90%;
-    height: auto;
-    margin: 20px auto;
-    border-left: none;
-    border-top: 2px solid rgba(97, 91, 101, 0.6);
-  }
 
   .gallery-container {
     height: 200px;
