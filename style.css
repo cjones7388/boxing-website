@@ -115,7 +115,8 @@ p {
 .logo {
   position: fixed;       /* stays on top of video and overlay */
   top: 80px;             /* move below nav (adjust to match nav height) */
-  left: 20px;            /* default desktop position */
+  left: 50%;             /* center horizontally */
+  transform: translateX(-50%); /* truly center it */
   z-index: 16;
 }
 
