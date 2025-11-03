@@ -157,20 +157,56 @@ p {
   50% { transform: translateX(-50%) translateY(10px); }
 }
 
-/* Style scrollbar (for Chrome, Edge, Safari) */
-.gallery-container::-webkit-scrollbar {
-  height: 8px;
-}
-.gallery-container::-webkit-scrollbar-thumb {
-  background: rgba(97, 91, 101, 0.6);
-  border-radius: 10px;
+.gallery {
+  position: fixed;         /* stick gallery to right */
+  top: 300px;              /* below nav */
+  right: 10px;                /* stick to right edge */
+  width: 600px;            /* width of gallery */
+  height: 500;
+  background-color: rgba(0,0,0,0.4);
+  backdrop-filter: blur(4px);
+  overflow-y: auto;        /* vertical scroll */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;  /* stack images vertically */
+  gap: 10px;
+  z-index: 15;
 }
 
+.gallery-container {
+  display: flex;              /* horizontal layout */
+  flex-direction: row;        /* make it a row */
+  overflow-x: auto;           /* enable horizontal scrolling */
+  overflow-y: hidden;         /* hide vertical scroll */
+  gap: 10px;                  /* space between images */
+  padding: 10px;
+  max-width: 100%;
+  scroll-behavior: smooth;    /* smooth scrolling */
+}
+
+/* Each image */
+.gallery-container img {
+  height: 200px;              /* set uniform height */
+  flex: 0 0 auto;             /* prevent shrinking/growing */
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  object-fit: cover;
+}
 
 /* Hover zoom effect */
 .gallery-container img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(97, 91, 101, 0.6);
+}
+
+/* Scrollbar styling (Chrome, Edge, Safari) */
+.gallery-container::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery-container::-webkit-scrollbar-thumb {
+  background: rgba(97, 91, 101, 0.6);
+  border-radius: 10px;
 }
 
 
