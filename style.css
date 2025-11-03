@@ -7,9 +7,10 @@
 
 /* Fullscreen video background */
 body, html {
-  height: 100%;
   font-family: Arial, sans-serif;
-  overflow: hidden; /* prevents scrolling under video */
+  /* remove height:100% and overflow:hidden */
+  margin: 0;
+  padding: 0;
 }
 
 /* Navigation Bar */
