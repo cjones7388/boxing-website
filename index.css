@@ -265,7 +265,7 @@ p {
   .video-bg {
     position: fixed;
     top: 0;
-    left: 0;            /* keep at left edge */
+    left: 500px;            /* keep at left edge */
     width: 120%;        /* make it wider to allow shifting */
     height: 100%;
     object-fit: cover;
