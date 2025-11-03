@@ -189,6 +189,8 @@ p {
 
   .gallery {
     position: relative !important;
+    top: auto !important;
+    right: auto !important;
     width: 90%;
     margin: 20px auto;
     height: auto;
