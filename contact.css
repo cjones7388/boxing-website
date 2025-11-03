@@ -200,3 +200,82 @@ footer {
   width: 24px;
   margin-right: 10px;
 }
+
+@media (max-width: 600px) {
+
+  /* Let everything stack vertically */
+  body {
+    padding-top: 90px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+
+  nav a {
+    margin: 5px 10px;
+    font-size: 0.95rem;
+  }
+
+  /* Center the logo and make smaller */
+  .logo {
+    position: relative;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  /* Header text fits smaller screens */
+  header h1 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+  }
+
+  header p {
+    font-size: 1rem;
+    max-width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  /* Make the form section full width and scrollable */
+  .container {
+    width: 90%;
+    margin: 20px auto 60px;
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-form button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  /* WhatsApp button smaller & lower corner */
+  .whatsapp-btn {
+    top: auto;
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+  }
+
+  .whatsapp-btn img {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+}
