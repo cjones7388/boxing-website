@@ -38,6 +38,20 @@ body {
   100% { opacity: 1; }
 }
 
+/* Logo: centered on all devices */
+.logo {
+  position: fixed;       /* stays on top of video and overlay */
+  top: 50px;             /* below nav */
+  left: 100px;             /* horizontal center */
+  transform: translateX(-50%); /* exact centering */
+  z-index: 200;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
 
 /* Navigation */
 nav {
@@ -158,4 +172,31 @@ footer {
   header p { font-size: 1rem; }
   .container { padding: 20px; margin: 50px 20px; }
   nav a { margin: 0 10px; font-size: 1rem; }
+}
+
+
+/* WhatsApp button */
+.whatsapp-btn {
+  position: fixed;
+  top: 100px; 
+  right:30px;
+  background-color: #25D366;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1ebe5d;
+}
+
+.whatsapp-btn img {
+  height: 24px;
+  width: 24px;
+  margin-right: 10px;
 }

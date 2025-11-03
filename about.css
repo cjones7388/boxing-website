@@ -53,7 +53,31 @@ nav {
       max-width: 900px;
       margin: 40px auto;
       padding: 0 20px;
+      opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1.2s forwards 0.5s; /* starts after 0.5s */
     }
+    @keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    /* Logo: centered on all devices */
+.logo {
+  position: fixed;       /* stays on top of video and overlay */
+  top: 60px;             /* below nav */
+  left: 100px;             /* horizontal center */
+  transform: translateX(-50%); /* exact centering */
+  z-index: 200;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+  image-rendering: -webkit-optimize-contrast;
+}
 
     .section-title {
       font-size: 2rem;
