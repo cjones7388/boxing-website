@@ -174,14 +174,13 @@ p {
 }
 
 .gallery-container {
-  display: flex;              /* horizontal layout */
-  flex-direction: row;        /* make it a row */
-  overflow-x: auto;           /* enable horizontal scrolling */
-  overflow-y: hidden;         /* hide vertical scroll */
-  gap: 10px;                  /* space between images */
-  padding: 10px;
-  max-width: 100%;
-  scroll-behavior: smooth;    /* smooth scrolling */
+  display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 10px;
+    padding: 5px;
+    width: 100% !important;         /* force full width */
 }
 
 /* Each image */
