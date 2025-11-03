@@ -161,7 +161,7 @@ p {
   position: fixed;         /* stick gallery to right */
   top: 300px;              /* below nav */
   right: 10px;                /* stick to right edge */
-  width: 600px;            /* width of gallery */
+  width: 30%;            /* width of gallery */
   height: 500;
   background-color: rgba(0,0,0,0.4);
   backdrop-filter: blur(4px);
