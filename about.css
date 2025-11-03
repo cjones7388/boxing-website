@@ -118,3 +118,69 @@ nav {
   z-index: -1;
 }
 
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+
+  /* Allow normal page flow */
+  body {
+    padding-top: 80px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    padding: 10px 0;
+  }
+
+  nav a {
+    margin: 5px 10px;
+    font-size: 0.95rem;
+  }
+
+  /* Center logo above content */
+  .logo {
+    position: relative;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0;
+  }
+
+  .logo img {
+    width: 120px;
+  }
+
+  /* Header text smaller and centered */
+  header {
+    padding: 15px 10px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+
+  /* Container and text adjustments */
+  .container {
+    width: 90%;
+    margin: 20px auto;
+    padding: 0;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+  }
+
+  /* Footer smaller and clean */
+  footer {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+}
