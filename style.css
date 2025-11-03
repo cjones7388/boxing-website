@@ -124,12 +124,21 @@ p {
   image-rendering: -webkit-optimize-contrast;
 }
 
-/* Responsive */
+/* Responsive logo */
 @media (max-width: 768px) {
-  h1 { font-size: 2rem; }
-  p { font-size: 1rem; }
-  .overlay {
-    padding: 80px 20px;
-    align-items: flex-start;
+  .logo {
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .logo img {
+    width: 150px;
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  .logo img {
+    width: 120px;
   }
 }
