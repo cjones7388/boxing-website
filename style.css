@@ -63,18 +63,19 @@ nav ul li a:hover {
 .overlay {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;       /* use min-height instead of height for scrolling */
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* vertically center */
-  align-items: flex-start;   /* left align */
+  justify-content: center;  /* vertical centering */
+  align-items: flex-start;  /* left align in flex */
   text-align: left;
-  padding: 100px 0 0 80px;   /* top + left padding */
+  padding: 100px 20px 0 20px;  /* less left padding for flush alignment */
   background-color: rgba(0,0,0,0.4);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   color: white;
 }
+
 
 /* Heading and text */
 h1 {
