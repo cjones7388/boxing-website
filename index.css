@@ -263,14 +263,14 @@ p {
   }
 
    .video-bg {
-   position: fixed;
+    position: fixed;
     top: 0;
-    left: 0;             /* always anchored to left edge */
-    width: 150%;         /* make it wider so you can show right side */
+    left: -20%;        /* shift the container left */
+    width: 140%;       /* slightly wider to fill viewport */
     height: 100%;
-    object-fit: cover;    /* cover full viewport */
-    object-position: right center; /* focus on right side */
-    transform: translateX(0); /* ensure no unwanted shift */
+    object-fit: cover;
+    object-position: center center; /* keep video content centered inside container */
+    z-index: -1;
   }
 
   /* WhatsApp button stays fixed but smaller */
