@@ -234,8 +234,8 @@ p {
   /* WhatsApp button stays fixed but smaller */
   .whatsapp-btn {
     position: relative;
-    bottom: 15px;
-    right: 15px;
+   top: auto;
+    left: auto;
     padding: 10px 18px;
     font-size: 0.9rem;
   }
