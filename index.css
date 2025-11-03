@@ -264,7 +264,7 @@ p {
 
   .video-bg {
    left: 10%; /* move it 10% from left */
-    width: 120%; /* slightly wider so it still covers */
+    width: 100%; /* slightly wider so it still covers */
     object-position: center right; /* focus video on right side */}
   
 
