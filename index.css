@@ -157,16 +157,25 @@ p {
   50% { transform: translateX(-50%) translateY(10px); }
 }
 
-/* Tablet screens */
-@media (max-width: 768px) {
-  .logo {
-    top: 70px;           /* adjust spacing below nav */
-  }
-
-  .logo img {
-    width: 150px;        /* smaller logo */
-  }
+/* Style scrollbar (for Chrome, Edge, Safari) */
+.gallery-container::-webkit-scrollbar {
+  height: 8px;
 }
+.gallery-container::-webkit-scrollbar-thumb {
+  background: rgba(97, 91, 101, 0.6);
+  border-radius: 10px;
+}
+
+
+/* Hover zoom effect */
+.gallery-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(97, 91, 101, 0.6);
+}
+
+
+/**************************************************************************************/
+
 
 /* --- Mobile Layout Fixes --- */
 @media (max-width: 600px) {
@@ -185,20 +194,6 @@ p {
     left: auto !important;
     margin: 10px auto;
     max-width: 90%;
-  }
-
-  .gallery {
-    position: relative !important;  /* flow naturally */
-    top: auto !important;
-    right: auto !important;
-    width: 95%;                    /* almost full width */
-    max-width: 95%;                /* prevent overflow */
-    margin: 20px auto;             /* centered with spacing */
-    height: 200px;                 /* fixed height for scrolling gallery */
-    padding: 10px;
-    border-left: none;             /* remove left divider */
-    background-color: rgba(0, 0, 0, 0.7);
-    overflow: hidden;
   }
 
   /* Logo should just flow */
@@ -231,10 +226,7 @@ p {
     font-size: 1rem;
     line-height: 1.4;
   }
-
-  /* Gallery moves below the text and becomes full width */
-
-   
+  
 
   /* WhatsApp button stays fixed but smaller */
 
@@ -281,18 +273,4 @@ p {
 }
 
 
-/* Style scrollbar (for Chrome, Edge, Safari) */
-.gallery-container::-webkit-scrollbar {
-  height: 8px;
-}
-.gallery-container::-webkit-scrollbar-thumb {
-  background: rgba(97, 91, 101, 0.6);
-  border-radius: 10px;
-}
 
-
-/* Hover zoom effect */
-.gallery-container img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(97, 91, 101, 0.6);
-}
