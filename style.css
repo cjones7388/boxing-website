@@ -25,7 +25,7 @@ nav {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   padding: 20px 40px;
-  z-index: 15;
+  z-index: 20;
 }
 
 nav ul {
@@ -112,9 +112,9 @@ p {
 
 /* Logo */
 .logo {
-  position: fixed;
-  top: 20px;
-  left: 20px;
+  position: fixed;       /* stays on top of video and overlay */
+  top: 80px;             /* move below nav (adjust to match nav height) */
+  left: 20px;            /* default desktop position */
   z-index: 16;
 }
 
@@ -124,13 +124,14 @@ p {
   image-rendering: -webkit-optimize-contrast;
 }
 
-/* Responsive logo */
+/* Responsive: center below nav on smaller screens */
 @media (max-width: 768px) {
   .logo {
-    top: 10px;
+    top: 70px;           /* below nav */
     left: 50%;
     transform: translateX(-50%);
   }
+
   .logo img {
     width: 150px;
   }
