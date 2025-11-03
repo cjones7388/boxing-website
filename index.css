@@ -213,7 +213,7 @@ p {
 
 
 /* --- Mobile Layout Fixes --- */
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
 
     .overlay {
     display: block; /* normal block flow instead of flex */
