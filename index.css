@@ -234,12 +234,12 @@ p {
   }
 
   /* WhatsApp button stays fixed but smaller */
-  .whatsapp-btn {
-    position: relative;
-   top: auto;
+
+   .whatsapp-btn {
+    position: fixed; /* optional: keep fixed at bottom */
+    bottom: 15px;
+    right: 15px;
     left: auto;
-    padding: 10px 18px;
-    font-size: 0.9rem;
   }
 }
 
