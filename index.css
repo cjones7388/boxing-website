@@ -161,8 +161,8 @@ p {
   position: fixed;         /* stick gallery to right */
   top: 300px;              /* below nav */
   right: 10px;                /* stick to right edge */
-  width: 30%;            /* width of gallery */
-  height: 500;
+  width: 40%;            /* width of gallery */
+  height: 400px;
   background-color: rgba(0,0,0,0.4);
   backdrop-filter: blur(4px);
   overflow-y: auto;        /* vertical scroll */
@@ -185,7 +185,7 @@ p {
 
 /* Each image */
 .gallery-container img {
-  height: 200px;              /* set uniform height */
+  height: 390px;              /* set uniform height */
   flex: 0 0 auto;             /* prevent shrinking/growing */
   border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -261,6 +261,11 @@ p {
     font-size: 1rem;
     line-height: 1.4;
   }
+
+  .video-bg {
+   left: 10%; /* move it 10% from left */
+    width: 120%; /* slightly wider so it still covers */
+    object-position: center right; /* focus video on right side */}
   
 
   /* WhatsApp button stays fixed but smaller */
@@ -271,9 +276,7 @@ p {
     right: 15px;
     left: auto;
   }
-}
 
-@media (max-width: 600px) {
   .gallery {
     position: relative !important;  /* let it flow normally */
     top: auto !important;
