@@ -14,7 +14,8 @@ body {
   line-height: 1.6;
   color: white;
   background-color: #000;
-  padding-top: 70px; /* space for fixed nav */
+  padding-top: 70px;
+  /* space for fixed nav */
 }
 
 /* Fullscreen video background */
@@ -30,20 +31,41 @@ body {
 }
 
 @keyframes fadeLoop {
-  0%   { opacity: 0.1; }
-  20%  { opacity: 0.2; }
-  50%  { opacity: 0.5; }
-  70%  { opacity: 0.7; }
-  95%  { opacity: 0.95; }
-  100% { opacity: 1; }
+  0% {
+    opacity: 0.1;
+  }
+
+  20% {
+    opacity: 0.2;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  70% {
+    opacity: 0.7;
+  }
+
+  95% {
+    opacity: 0.95;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /* Logo: centered on all devices */
 .logo {
-  position: fixed;       /* stays on top of video and overlay */
-  top: 50px;             /* below nav */
-  left: 100px;             /* horizontal center */
-  transform: translateX(-50%); /* exact centering */
+  position: fixed;
+  /* stays on top of video and overlay */
+  top: 50px;
+  /* below nav */
+  left: 100px;
+  /* horizontal center */
+  transform: translateX(-50%);
+  /* exact centering */
   z-index: 200;
 }
 
@@ -88,12 +110,12 @@ header {
 header h1 {
   font-size: 3rem;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 header p {
   font-size: 1.2rem;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 }
 
 /* Container overlay for form */
@@ -105,7 +127,7 @@ header p {
   background-color: rgba(0, 0, 0, 0.6);
   border-radius: 12px;
   backdrop-filter: blur(6px);
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
 
@@ -162,24 +184,15 @@ header p {
 footer {
   text-align: center;
   padding: 20px;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
 }
-
-/* Responsive */
-@media (max-width: 768px) {
-  header h1 { font-size: 2rem; }
-  header p { font-size: 1rem; }
-  .container { padding: 20px; margin: 50px 20px; }
-  nav a { margin: 0 10px; font-size: 1rem; }
-}
-
 
 /* WhatsApp button */
 .whatsapp-btn {
   position: fixed;
-  top: 100px; 
-  right:30px;
+  top: 100px;
+  right: 30px;
   background-color: #25D366;
   color: white;
   padding: 15px 25px;
@@ -199,6 +212,28 @@ footer {
   height: 24px;
   width: 24px;
   margin-right: 10px;
+}
+
+/**************************************************************************************/
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .container {
+    padding: 20px;
+    margin: 50px 20px;
+  }
+
+  nav a {
+    margin: 0 10px;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 600px) {
