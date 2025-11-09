@@ -246,27 +246,25 @@ p {
 @media (max-width: 768px) {
 
   
-  .video-wrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100dvh;
-    background-color: black; /* fallback if video doesn't fill */
-    z-index: -1;
-  }
+  /* Keep your video container */
+.video-wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  pointer-events: none; /* so overlay content is clickable */
+}
 
-  .video-bg {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 100%;
-    height: auto;        /* keeps aspect ratio */
-    max-height: 100dvh;  /* never exceeds viewport height */
-    transform: translateX(-50%);
-    object-fit: contain;  /* keeps entire video visible */
-    z-index: -1;
-  }
+/* Video itself */
+.video-bg {
+  width: auto;          /* video keeps its natural width */
+  height: 50vh;         /* adjust height as you like */
+  max-width: 100%;      /* never exceed screen width */
+  max-height: 100%;     /* never exceed screen height */
+  object-fit: contain;  /* shows entire video without cropping */
+  display: block;
+}
 
   /* Overlay content on top of video */
   .overlay {
