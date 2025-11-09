@@ -247,8 +247,8 @@ p {
 
   .overlay {
     position: fixed;
-top: 0;
-    left: 10;
+    top: 0;
+    left: 10px;
     display: block;
     /* normal block flow instead of flex */
     align-items: unset;
