@@ -294,7 +294,7 @@ p {
     line-height: 1.4;
   }
 
-  .video-bg {
+  .video-wrapper {
     position: fixed;
     top: 0;
     left: 50%;
