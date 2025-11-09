@@ -294,22 +294,32 @@ p {
     line-height: 1.4;
   }
 
-  .video-wrapper {
+  /* .video-wrapper {
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    /* keep it horizontally centered */
+    /* keep it horizontally centered 
     min-width: 100vw;
     min-height: 100vh;
     width: auto;
     height: auto;
     object-fit: contain;
-    /* fit entire video on screen */
+    /* fit entire video on screen 
     object-position: 80% center;
     background-color: black;
-    /* prevents white edges if aspect ratio differs */
+    /* prevents white edges if aspect ratio differs 
     z-index: -1;
+  } */
+
+   .video-wrapper {
+    height: 100vh; /* Take up full viewport height */
+  }
+
+  .video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fill entire screen without stretching */
   }
 
   /* WhatsApp button stays fixed but smaller */
